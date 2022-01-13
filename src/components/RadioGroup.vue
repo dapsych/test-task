@@ -6,6 +6,7 @@
 
 <script>
 export default {
+    name: 'RadioGroup',
     props: {
         disabled: {
             type: Boolean,

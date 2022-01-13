@@ -1,10 +1,17 @@
 <template>
   <div>
+    <label>Disable <input type="checkbox" v-model="disabled" /></label>
     <RadioGroup v-model="value" :disabled="disabled">
       <RadioItem value="1">Значение 1</RadioItem>
       <RadioItem value="2">Значение 2</RadioItem>
       <RadioItem value="3">Значение 3</RadioItem>
     </RadioGroup>
+    <br />
+    <br />
+    <div>Not grouped</div>
+    <RadioItem v-model="value" :disabled="disabled" value="3">Значение 3</RadioItem>
+    <br />
+    <br />
     <span>value: {{ value }}</span>
   </div>
 </template>
